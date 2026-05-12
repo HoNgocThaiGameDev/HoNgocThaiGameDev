@@ -16,7 +16,7 @@
 
 I build backend systems for games, including service logic, API flows, data models, persistence, and tools that support gameplay features. I care about reliable state handling, testable code, clean integration boundaries, and code that is easy to review in a team.
 
-My background in Unity and gameplay programming helps me understand how game clients consume backend systems, but my current focus is Game Backend Development with C#, .NET, databases, caching, and practical service design.
+My background in Unity and shipped mobile games helps me understand how game clients consume backend systems, but my current focus is Game Backend Development with C#, .NET, databases, caching, and practical service design.
 
 ## Tech Stack
 
@@ -39,6 +39,13 @@ My background in Unity and gameplay programming helps me understand how game cli
 | [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity/C# gameplay prototype with clean game-state flow |
 | [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity/C# gameplay systems and project structure |
 | [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | C# gameplay logic and system organization |
+
+## Published Products
+
+| Product | Platform | Focus |
+| --- | --- | --- |
+| [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | 3D card-sorting puzzle game with mobile gameplay flow |
+| [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | Strategy/action game with combat, upgrades, and progression |
 
 ## What I Care About
 
