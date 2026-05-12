@@ -52,10 +52,10 @@ C#/.NET developer focused on game services, API logic, data persistence, multipl
 
 ## Published Products
 
-| Product | Platform | Focus |
-| --- | --- | --- |
-| [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | 3D card-sorting puzzle game with mobile gameplay flow |
-| [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | Strategy/action game with combat, upgrades, and progression |
+| Product | Platform | Demo | Focus |
+| --- | --- | --- | --- |
+| [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D card-sorting puzzle game with mobile gameplay flow |
+| [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | - | Strategy/action game with combat, upgrades, and progression |
 
 ## Selected Projects
 
