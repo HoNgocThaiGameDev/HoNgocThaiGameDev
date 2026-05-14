@@ -4,7 +4,7 @@
 
 ### Game Backend Developer
 
-C#/.NET developer focused on backend game systems: player-state persistence, reward logic, LiveOps services, API boundaries, Firebase/Photon integration, and production-ready data flows.
+C#/.NET developer focused on backend game systems: player-state persistence, reward/economy logic, service APIs, Firebase/Photon integration, and production-ready data flows.
 
 <p>
   <a href="https://github.com/HoNgocThaiGameDev?tab=repositories">
@@ -24,7 +24,7 @@ C#/.NET developer focused on backend game systems: player-state persistence, rew
 
 ## What I Build
 
-I build backend and service logic for games: reward flows, progression systems, save-state handling, LiveOps service rules, API contracts, Firebase/Photon integrations, and internal tooling that makes game features easier to operate after release.
+I build backend and service logic for games: reward flows, progression systems, save-state handling, API contracts, Firebase/Photon integrations, and internal tooling that makes game features easier to operate after release.
 
 My current focus is backend reliability for game features: clear state transitions, defensive save migration, testable time logic, explicit edge-case handling, and behavior that QA can verify from a spec.
 
@@ -32,9 +32,9 @@ My current focus is backend reliability for game features: clear state transitio
 
 | Area | Practical Ownership |
 | --- | --- |
-| LiveOps services | Event trigger rules, daily reset, cooldown, reward claim, player eligibility, tracking hooks |
-| Player state | Save data shape, migration, versioning, rollback-safe progress, persistence boundaries |
-| Game backend | Service/API logic, admin/support flows, clean contracts between client and backend |
+| Game services | Reward flow, progression rules, player eligibility, tracking hooks |
+| Player data | Save data shape, migration, versioning, rollback-safe progress, persistence boundaries |
+| Backend APIs | Service/API logic, admin/support flows, clean contracts between client and backend |
 | Platform integration | Firebase, Photon, client/backend communication, runtime debugging |
 | Quality | NUnit tests, reviewable code, edge-case coverage, production-risk thinking |
 
@@ -49,7 +49,7 @@ My current focus is backend reliability for game features: clear state transitio
 
 | Project | Stack | What It Shows |
 | --- | --- | --- |
-| [Comeback Bonus LiveOps Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | Backend-style LiveOps state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
+| [Comeback Bonus Backend Logic Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | Backend-style event state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
 | [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity, C# | Core gameplay loop, input timing, game-state organization |
 | [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity, C# | Gameplay systems, project structure, combat/progression logic |
 | [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | Unity, C# | Shooter-defense gameplay logic and C# system organization |
@@ -66,7 +66,7 @@ My current focus is backend reliability for game features: clear state transitio
 
 ## How I Approach Game Backend Systems
 
-- Start from the PRD/spec and clarify ambiguous event rules before coding.
+- Start from the PRD/spec and clarify ambiguous backend/service rules before coding.
 - Keep configuration data separate from service/controller logic so rewards, cooldowns, and balance values can be tuned safely.
 - Treat save state as production data: version it, migrate it, and avoid overwriting player progress.
 - Use injectable time providers for testability and prepare production paths for trusted/server time.
