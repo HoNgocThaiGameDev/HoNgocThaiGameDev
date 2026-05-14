@@ -64,7 +64,6 @@ Released Android games with hands-on ownership across gameplay systems, player p
 | Project | Stack | What It Shows |
 | --- | --- | --- |
 | [Comeback Bonus Backend Logic Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | Backend-style event state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
-| [Hyper Gunner Online](https://github.com/HoNgocThaiGameDev/Hyper-Gunner) | Unity, C#, Photon Fusion, Firebase, VContainer | Published online action game with multiplayer, backend abstraction, player progression, economy, inventory, rewards, and mobile release experience |
 | [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity, C# | Core gameplay loop, input timing, game-state organization |
 | [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity, C# | Gameplay systems, project structure, combat/progression logic |
 | [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | Unity, C# | Shooter-defense gameplay logic and C# system organization |
