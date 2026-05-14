@@ -2,9 +2,9 @@
 
 # Ho Ngoc Thai
 
-### Game Backend / Unity LiveOps Developer
+### Game Backend Developer
 
-C#/.NET developer focused on game systems, player-state persistence, reward logic, LiveOps events, and backend boundaries for production games.
+C#/.NET developer focused on backend game systems: player-state persistence, reward logic, LiveOps services, API boundaries, Firebase/Photon integration, and production-ready data flows.
 
 <p>
   <a href="https://github.com/HoNgocThaiGameDev?tab=repositories">
@@ -14,7 +14,7 @@ C#/.NET developer focused on game systems, player-state persistence, reward logi
     <img src="https://img.shields.io/badge/Published-Google_Play-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Published games" />
   </a>
   <a href="#selected-engineering-work">
-    <img src="https://img.shields.io/badge/Focus-C%23_.NET_Unity-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="C# .NET Unity" />
+    <img src="https://img.shields.io/badge/Focus-Game_Backend-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="Game Backend" />
   </a>
 </p>
 
@@ -24,18 +24,18 @@ C#/.NET developer focused on game systems, player-state persistence, reward logi
 
 ## What I Build
 
-I build gameplay-adjacent backend and service logic for games: reward flows, progression systems, save-state handling, LiveOps event rules, API contracts, Firebase/Photon integrations, and tools that make game features easier to operate after release.
+I build backend and service logic for games: reward flows, progression systems, save-state handling, LiveOps service rules, API contracts, Firebase/Photon integrations, and internal tooling that makes game features easier to operate after release.
 
-My current focus is writing game code that is easy to review: clear state transitions, defensive save migration, testable time logic, explicit edge-case handling, and behavior that QA can verify from a spec.
+My current focus is backend reliability for game features: clear state transitions, defensive save migration, testable time logic, explicit edge-case handling, and behavior that QA can verify from a spec.
 
 ## Engineering Focus
 
 | Area | Practical Ownership |
 | --- | --- |
-| LiveOps events | Event trigger rules, daily reset, cooldown, reward claim, popup state, tracking hooks |
+| LiveOps services | Event trigger rules, daily reset, cooldown, reward claim, player eligibility, tracking hooks |
 | Player state | Save data shape, migration, versioning, rollback-safe progress, persistence boundaries |
 | Game backend | Service/API logic, admin/support flows, clean contracts between client and backend |
-| Platform integration | Firebase, Photon, Unity client communication, runtime debugging |
+| Platform integration | Firebase, Photon, client/backend communication, runtime debugging |
 | Quality | NUnit tests, reviewable code, edge-case coverage, production-risk thinking |
 
 ## Published Games
@@ -49,7 +49,7 @@ My current focus is writing game code that is easy to review: clear state transi
 
 | Project | Stack | What It Shows |
 | --- | --- | --- |
-| [Comeback Bonus LiveOps Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | LiveOps event state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
+| [Comeback Bonus LiveOps Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | Backend-style LiveOps state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
 | [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity, C# | Core gameplay loop, input timing, game-state organization |
 | [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity, C# | Gameplay systems, project structure, combat/progression logic |
 | [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | Unity, C# | Shooter-defense gameplay logic and C# system organization |
@@ -60,14 +60,14 @@ My current focus is writing game code that is easy to review: clear state transi
 | --- | --- |
 | Languages | C#, C++, JavaScript/TypeScript |
 | Backend | .NET, ASP.NET Core, REST APIs, PostgreSQL |
-| Game tech | Unity, Photon, Firebase |
+| Game services | Photon, Firebase, Unity client integration |
 | Testing | NUnit, unit-testable service logic, edge-case test design |
 | Workflow | Git, GitHub, readable PR-style documentation, debugging from logs and repro steps |
 
-## How I Approach Game Systems
+## How I Approach Game Backend Systems
 
 - Start from the PRD/spec and clarify ambiguous event rules before coding.
-- Keep configuration data separate from controller logic so rewards, cooldowns, and balance values can be tuned safely.
+- Keep configuration data separate from service/controller logic so rewards, cooldowns, and balance values can be tuned safely.
 - Treat save state as production data: version it, migrate it, and avoid overwriting player progress.
 - Use injectable time providers for testability and prepare production paths for trusted/server time.
 - Write focused tests around edge cases: first-time user, rollback time, fast-forward time, cooldown boundaries, reward failure, and old-save migration.
@@ -75,10 +75,10 @@ My current focus is writing game code that is easy to review: clear state transi
 
 ## Current Direction
 
-I am strengthening my game backend and LiveOps skill set around service architecture, player-state persistence, reward systems, production debugging, API boundaries, Firebase/Photon integration, and reliable C# test coverage.
+I am strengthening my game backend skill set around service architecture, player-state persistence, reward systems, production debugging, API boundaries, Firebase/Photon integration, and reliable C# test coverage.
 
 ---
 
 <p align="center">
-  Open to Game Backend, Unity LiveOps, and C#/.NET game-service opportunities.
+  Open to Game Backend and C#/.NET game-service opportunities.
 </p>
