@@ -43,7 +43,7 @@ My current focus is backend reliability for game features: clear state transitio
 | Product | Platform | Demo | Focus |
 | --- | --- | --- | --- |
 | [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D card-sorting puzzle game with mobile gameplay flow |
-| [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Strategy/action game with combat, upgrades, and progression |
+| [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Online strategy/action game with combat, upgrades, and progression |
 
 ## Selected Engineering Work
 
