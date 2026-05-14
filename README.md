@@ -40,24 +40,24 @@ My current focus is backend reliability for game features: clear state transitio
 
 ## Published Games
 
-| Product | Platform | Demo | Focus |
-| --- | --- | --- | --- |
-| [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D conveyor card-sorting puzzle with level progression, coin economy, ads, and IAP |
-| [Hyper Gunner Online](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Online bullet-hell action game with PVE, Coop/PVP, backend services, progression, ads, and IAP |
-
-## Published Game Details
+Released Android games with hands-on ownership across gameplay systems, player progression, monetization, and backend-facing service flows.
 
 ### Conveyer Craze: Card Sort
 
-- **Gameplay:** 3D mobile card-sorting puzzle where each level generates colored card packs across multiple queue rows. The player taps the front pack of a row to send matching-color cards onto a spline-driven conveyor, then routes them into matching card boxes. A level is cleared when all queued cards, conveyor cards, deck cards, and active color counts are resolved.
-- **Core systems:** Procedural conveyor layout selection, spawn-point filtering, dynamic card-pack generation, color-group balancing, start-box capacity limits, deck overflow retry logic, same-color group return from deck, card-box refill flow, win/retry panels, skip-level purchase, shuffle action, spin wheel, coin rewards, and persistent level/coin state.
-- **Technology:** Unity 2022.3 LTS, C#, Unity Splines/SplineMesh for conveyor paths, DOTween/DOTween Pro for card movement and UI animation, Google Mobile Ads and Unity Ads for interstitial/rewarded ads, Unity IAP for coin purchases, PlayerPrefs for progression and currency persistence, TextMeshPro/UI, audio feedback, and Android vibration feedback.
+[Google Play](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) · [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) · Unity/C# mobile puzzle
+
+- **Product:** 3D conveyor card-sorting puzzle where each level generates colored card packs across multiple queue rows. Players send matching-color packs onto a spline-driven conveyor and route them into matching card boxes to clear the board.
+- **Engineering scope:** Procedural conveyor selection, spawn-point filtering, card-pack generation, color balancing, start-box capacity rules, deck overflow retry flow, card-box refill logic, shuffle/skip-level actions, win/retry panels, coin economy, rewarded ads, IAP, and persistent level/currency state.
+- **Stack:** Unity 2022.3 LTS, C#, Unity Splines/SplineMesh, DOTween/DOTween Pro, Google Mobile Ads, Unity Ads, Unity IAP, PlayerPrefs, TextMeshPro/UGUI, audio feedback, and Android vibration.
 
 ### Hyper Gunner Online
 
-- **Gameplay:** Online top-down bullet-hell/survivor-like action game where players select characters, enter PVE maps, survive monster waves, defeat bosses, gain EXP, and choose skill/stat perks during the run. The project also supports Coop/PVP flows with Photon Fusion sessions, including arena-style modes, battle royale mode data, team/player sync, kill feed, revive/death handling, and friend-based room joining.
-- **Core systems:** Scene loading and character spawning, wave/boss gameplay loop, win-condition handling, perk and skill upgrades, player stats, inventory equipment, map rewards, quests, battle pass, daily/new-player rewards, shop/currency, leaderboard, mailbox, friends, presence, global messages, support/GM tools, local save, backend data export, analytics hooks, loading UI, localization, audio, event bus, and object pools for monsters, effects, drops, sounds, and damage popups.
-- **Technology:** Unity 2022.3 LTS, C#, URP 14, Photon Fusion 2 Shared Mode, Firebase, Colyseus/WebSocket SQL backend option, VContainer dependency injection, UniTask async workflows, Unity Input System, Unity IAP, VoxelBusters AdsKit/AdMob, Google Play Games, TextMeshPro/UGUI, Newtonsoft JSON, PlayerSave/SecurePrefs persistence, ScriptableObject-driven content data, Jenkins, and Fastlane.
+[Google Play](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) · [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) · Unity online action game
+
+- **Product:** Top-down bullet-hell/survivor-like action game with PVE maps, monster waves, boss fights, EXP gain, skill/stat perks, and online Coop/PVP modes through Photon Fusion sessions.
+- **Engineering scope:** Gameplay loop, scene loading, character spawning, win conditions, perk/skill upgrades, player stats, inventory equipment, map rewards, quests, battle pass, daily/new-player rewards, shop/currency, leaderboard, mailbox, friends, presence, global messages, GM/support tools, analytics hooks, localization, and pooled runtime effects.
+- **Backend/service work:** `IBackendService` abstraction with Offline, Firebase, and WebSocket/SQL implementations; Photon Fusion Shared Mode lobby/session flow; player data persistence through PlayerSave/SecurePrefs; backend data export tooling; reward, purchase, ranking, social, and GM APIs wired through client-facing service contracts.
+- **Stack:** Unity 2022.3 LTS, C#, URP 14, Photon Fusion 2, Firebase, Colyseus/WebSocket, VContainer, UniTask, Unity Input System, Unity IAP, VoxelBusters AdsKit/AdMob, Google Play Games, TextMeshPro/UGUI, Newtonsoft JSON, Jenkins, and Fastlane.
 
 ## Selected Engineering Work
 
