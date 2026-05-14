@@ -43,7 +43,7 @@ My current focus is backend reliability for game features: clear state transitio
 | Product | Platform | Demo | Focus |
 | --- | --- | --- | --- |
 | [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D conveyor card-sorting puzzle with level progression, coin economy, ads, and IAP |
-| [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Online strategy/action game with combat, upgrades, and progression |
+| [Hyper Gunner Online](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Online bullet-hell action game with PVE, Coop/PVP, backend services, progression, ads, and IAP |
 
 ## Published Game Details
 
@@ -53,12 +53,18 @@ My current focus is backend reliability for game features: clear state transitio
 - **Core systems:** Procedural conveyor layout selection, spawn-point filtering, dynamic card-pack generation, color-group balancing, start-box capacity limits, deck overflow retry logic, same-color group return from deck, card-box refill flow, win/retry panels, skip-level purchase, shuffle action, spin wheel, coin rewards, and persistent level/coin state.
 - **Technology:** Unity 2022.3 LTS, C#, Unity Splines/SplineMesh for conveyor paths, DOTween/DOTween Pro for card movement and UI animation, Google Mobile Ads and Unity Ads for interstitial/rewarded ads, Unity IAP for coin purchases, PlayerPrefs for progression and currency persistence, TextMeshPro/UI, audio feedback, and Android vibration feedback.
 
+### Hyper Gunner Online
+
+- **Gameplay:** Online top-down bullet-hell/survivor-like action game where players select characters, enter PVE maps, survive monster waves, defeat bosses, gain EXP, and choose skill/stat perks during the run. The project also supports Coop/PVP flows with Photon Fusion sessions, including arena-style modes, battle royale mode data, team/player sync, kill feed, revive/death handling, and friend-based room joining.
+- **Core systems:** Scene loading and character spawning, wave/boss gameplay loop, win-condition handling, perk and skill upgrades, player stats, inventory equipment, map rewards, quests, battle pass, daily/new-player rewards, shop/currency, leaderboard, mailbox, friends, presence, global messages, support/GM tools, local save, backend data export, analytics hooks, loading UI, localization, audio, event bus, and object pools for monsters, effects, drops, sounds, and damage popups.
+- **Technology:** Unity 2022.3 LTS, C#, URP 14, Photon Fusion 2 Shared Mode, Firebase, Colyseus/WebSocket SQL backend option, VContainer dependency injection, UniTask async workflows, Unity Input System, Unity IAP, VoxelBusters AdsKit/AdMob, Google Play Games, TextMeshPro/UGUI, Newtonsoft JSON, PlayerSave/SecurePrefs persistence, ScriptableObject-driven content data, Jenkins, and Fastlane.
+
 ## Selected Engineering Work
 
 | Project | Stack | What It Shows |
 | --- | --- | --- |
 | [Comeback Bonus Backend Logic Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | Backend-style event state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
-| [Hyper Gunner](https://github.com/HoNgocThaiGameDev/Hyper-Gunner) | Unity, C# | Published action/strategy game project with combat, upgrades, progression, and mobile release experience |
+| [Hyper Gunner Online](https://github.com/HoNgocThaiGameDev/Hyper-Gunner) | Unity, C#, Photon Fusion, Firebase, VContainer | Published online action game with multiplayer, backend abstraction, player progression, economy, inventory, rewards, and mobile release experience |
 | [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity, C# | Core gameplay loop, input timing, game-state organization |
 | [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity, C# | Gameplay systems, project structure, combat/progression logic |
 | [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | Unity, C# | Shooter-defense gameplay logic and C# system organization |
