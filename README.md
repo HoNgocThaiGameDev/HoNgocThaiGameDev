@@ -50,6 +50,7 @@ My current focus is backend reliability for game features: clear state transitio
 | Project | Stack | What It Shows |
 | --- | --- | --- |
 | [Comeback Bonus Backend Logic Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | Backend-style event state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
+| [Hyper Gunner](https://github.com/HoNgocThaiGameDev/Hyper-Gunner) | Unity, C# | Published action/strategy game project with combat, upgrades, progression, and mobile release experience |
 | [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity, C# | Core gameplay loop, input timing, game-state organization |
 | [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity, C# | Gameplay systems, project structure, combat/progression logic |
 | [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | Unity, C# | Shooter-defense gameplay logic and C# system organization |
