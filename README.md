@@ -2,16 +2,19 @@
 
 # Ho Ngoc Thai
 
-### Game Backend Developer
+### Game Backend / Unity LiveOps Developer
 
-C#/.NET developer focused on game services, API logic, data persistence, multiplayer systems, and backend tooling for games.
+C#/.NET developer focused on game systems, player-state persistence, reward logic, LiveOps events, and backend boundaries for production games.
 
 <p>
   <a href="https://github.com/HoNgocThaiGameDev?tab=repositories">
     <img src="https://img.shields.io/badge/GitHub-Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repositories" />
   </a>
-  <a href="#published-products">
-    <img src="https://img.shields.io/badge/Google_Play-Published_Games-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Google Play published games" />
+  <a href="#published-games">
+    <img src="https://img.shields.io/badge/Published-Google_Play-34A853?style=for-the-badge&logo=googleplay&logoColor=white" alt="Published games" />
+  </a>
+  <a href="#selected-engineering-work">
+    <img src="https://img.shields.io/badge/Focus-C%23_.NET_Unity-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt="C# .NET Unity" />
   </a>
 </p>
 
@@ -19,59 +22,63 @@ C#/.NET developer focused on game services, API logic, data persistence, multipl
 
 ---
 
-## Backend Focus
+## What I Build
 
-| Area | What I Work On |
+I build gameplay-adjacent backend and service logic for games: reward flows, progression systems, save-state handling, LiveOps event rules, API contracts, Firebase/Photon integrations, and tools that make game features easier to operate after release.
+
+My current focus is writing game code that is easy to review: clear state transitions, defensive save migration, testable time logic, explicit edge-case handling, and behavior that QA can verify from a spec.
+
+## Engineering Focus
+
+| Area | Practical Ownership |
 | --- | --- |
-| Game services | Account flow, gameplay service logic, reward rules, progression, and server-authoritative boundaries |
-| APIs and tooling | REST API design, admin/support tools, internal data flows, and clean integration contracts |
-| Data persistence | Save data, migration strategy, versioned state, and reliable player-data handling |
-| Multiplayer and platform services | Photon integration, Firebase services, client/backend communication, and runtime debugging |
-| Quality | Unit tests, readable code, edge-case handling, and behavior that can be reviewed clearly |
+| LiveOps events | Event trigger rules, daily reset, cooldown, reward claim, popup state, tracking hooks |
+| Player state | Save data shape, migration, versioning, rollback-safe progress, persistence boundaries |
+| Game backend | Service/API logic, admin/support flows, clean contracts between client and backend |
+| Platform integration | Firebase, Photon, Unity client communication, runtime debugging |
+| Quality | NUnit tests, reviewable code, edge-case coverage, production-risk thinking |
 
-## Tech Stack
-
-**Backend**
-
-![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![REST API](https://img.shields.io/badge/REST_API-0A66C2?style=for-the-badge&logo=openapiinitiative&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-
-**Game Services**
-
-![Photon](https://img.shields.io/badge/Photon-004480?style=for-the-badge&logo=photon&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-![Unity](https://img.shields.io/badge/Unity-222222?style=for-the-badge&logo=unity&logoColor=white)
-
-**Testing and Tools**
-
-![NUnit](https://img.shields.io/badge/NUnit-25A162?style=for-the-badge&logo=nuget&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-
-## Published Products
+## Published Games
 
 | Product | Platform | Demo | Focus |
 | --- | --- | --- | --- |
 | [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D card-sorting puzzle game with mobile gameplay flow |
 | [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Strategy/action game with combat, upgrades, and progression |
 
-## Selected Projects
+## Selected Engineering Work
 
-| Project | Focus |
+| Project | Stack | What It Shows |
+| --- | --- | --- |
+| [Comeback Bonus LiveOps Test](https://github.com/HoNgocThaiGameDev/comeback-bonus-liveops-test) | C#, .NET, NUnit | LiveOps event state machine, save migration, cooldown rules, reward flow, anti-cheat time boundaries, unit tests |
+| [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity, C# | Core gameplay loop, input timing, game-state organization |
+| [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity, C# | Gameplay systems, project structure, combat/progression logic |
+| [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | Unity, C# | Shooter-defense gameplay logic and C# system organization |
+
+## Technical Stack
+
+| Category | Tools |
 | --- | --- |
-| Comeback Bonus Backend Logic Test | C# state handling, save migration, cooldown rules, anti-cheat boundaries, NUnit tests |
-| [Piano Tile Core Game Demo](https://github.com/HoNgocThaiGameDev/Piano-Tile-Core-Game-Demo) | Unity/C# gameplay prototype with clean game-state flow |
-| [Protect Street Demo](https://github.com/HoNgocThaiGameDev/Protect_Street_Demo) | Unity/C# gameplay systems and project structure |
-| [Shooter Defense](https://github.com/HoNgocThaiGameDev/Shooter-Defense) | C# gameplay logic and system organization |
+| Languages | C#, C++, JavaScript/TypeScript |
+| Backend | .NET, ASP.NET Core, REST APIs, PostgreSQL |
+| Game tech | Unity, Photon, Firebase |
+| Testing | NUnit, unit-testable service logic, edge-case test design |
+| Workflow | Git, GitHub, readable PR-style documentation, debugging from logs and repro steps |
+
+## How I Approach Game Systems
+
+- Start from the PRD/spec and clarify ambiguous event rules before coding.
+- Keep configuration data separate from controller logic so rewards, cooldowns, and balance values can be tuned safely.
+- Treat save state as production data: version it, migrate it, and avoid overwriting player progress.
+- Use injectable time providers for testability and prepare production paths for trusted/server time.
+- Write focused tests around edge cases: first-time user, rollback time, fast-forward time, cooldown boundaries, reward failure, and old-save migration.
+- Prefer explicit event hooks for UI, Missions, analytics, and other systems instead of hidden coupling.
 
 ## Current Direction
 
-I am focused on building stronger game backend foundations: service architecture, player-state persistence, API contracts, multiplayer/platform integrations, testing, and debugging workflows.
+I am strengthening my game backend and LiveOps skill set around service architecture, player-state persistence, reward systems, production debugging, API boundaries, Firebase/Photon integration, and reliable C# test coverage.
 
 ---
 
 <p align="center">
-  Open to Game Backend Developer and C#/.NET backend opportunities.
+  Open to Game Backend, Unity LiveOps, and C#/.NET game-service opportunities.
 </p>
