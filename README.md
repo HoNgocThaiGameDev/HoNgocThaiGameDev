@@ -42,8 +42,16 @@ My current focus is backend reliability for game features: clear state transitio
 
 | Product | Platform | Demo | Focus |
 | --- | --- | --- | --- |
-| [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D card-sorting puzzle game with mobile gameplay flow |
+| [Conveyer Craze: Card Sort](https://play.google.com/store/apps/details?id=com.NebulaSoftStudio.ConveyerCrazeCardSortPuzzle) | Google Play | [Video demo](https://drive.google.com/file/d/13uM9Clp1OSWHNPoUWi7ML1pGx7ZwWjDM/view?usp=sharing) | 3D conveyor card-sorting puzzle with level progression, coin economy, ads, and IAP |
 | [Hyper Gunner](https://play.google.com/store/apps/details?id=com.DefaultCompany.HyperGunner) | Google Play | [Video demo](https://drive.google.com/file/d/1WqkOJWwkruTGs9fmKhWGQRR6GihPHoU0/view?usp=sharing) | Online strategy/action game with combat, upgrades, and progression |
+
+## Published Game Details
+
+### Conveyer Craze: Card Sort
+
+- **Gameplay:** 3D mobile card-sorting puzzle where each level generates colored card packs across multiple queue rows. The player taps the front pack of a row to send matching-color cards onto a spline-driven conveyor, then routes them into matching card boxes. A level is cleared when all queued cards, conveyor cards, deck cards, and active color counts are resolved.
+- **Core systems:** Procedural conveyor layout selection, spawn-point filtering, dynamic card-pack generation, color-group balancing, start-box capacity limits, deck overflow retry logic, same-color group return from deck, card-box refill flow, win/retry panels, skip-level purchase, shuffle action, spin wheel, coin rewards, and persistent level/coin state.
+- **Technology:** Unity 2022.3 LTS, C#, Unity Splines/SplineMesh for conveyor paths, DOTween/DOTween Pro for card movement and UI animation, Google Mobile Ads and Unity Ads for interstitial/rewarded ads, Unity IAP for coin purchases, PlayerPrefs for progression and currency persistence, TextMeshPro/UI, audio feedback, and Android vibration feedback.
 
 ## Selected Engineering Work
 
